@@ -1,0 +1,331 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+.active {
+  color: skyblue;
+  text-decoration: underline;
+}
+
+.navbar {
+  background-color: whitesmoke;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.logo {
+  height: 40px;
+  width: 40px;
+}
+.logo > img {
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+}
+* {
+  margin: 1px;
+  padding: 0px;
+}
+.listItems {
+  padding: 65px;
+  display: flex;
+  padding: 54px;
+  gap: 60px;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+li {
+  list-style: none;
+}
+.searchBox {
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 10px;
+  border-radius: 8px;
+  box-shadow: 5px 5px 15px grey; /* X offset, Y offset */
+  gap: 10px;
+}
+.searchBox > input {
+  padding: 5px;
+  border: 0px;
+  outline: none;
+  background-color: whitesmoke;
+  width: 300px;
+  color: black;
+  font-weight: 900;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgb(95, 93, 93); /* X offset, Y offset */
+}
+.searchBtn {
+  background-color: grey;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 30px;
+  border: 1px rgb(92, 89, 89) solid;
+  cursor: pointer;
+  box-shadow: 5px 5px 15px rgb(95, 93, 93); /* X offset, Y offset */
+}
+.searchBtn:hover {
+  background-color: rgb(red, green, blue);
+}
+.classroom_list {
+  margin-top: 10px;
+}
+.table_list {
+  padding: 6px;
+}
+th,
+td {
+  padding: opx;
+}
+.table_list > table {
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+}
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 20px;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0px auto;
+}
+.title {
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.formSubmit{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  max-width: 500px;
+  background-color: rgb(226, 225, 225);
+  padding: 10px 14px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 50px rgb(197, 196, 196);
+}
+.nameInput {
+  flex-grow: 1;
+  display: flex;
+  gap: 5px;
+  width: 100%;
+}
+.nameInput > input {
+  flex-grow: 1;
+  border-radius: 10px;
+  border: 1px rgb(192, 190, 190) solid;
+  /* box-shadow: 5px 5px 50px rgb(197, 196, 196); */
+  padding: 0 10px;
+}
+label {
+  width: 70px;
+  font-size: large;
+  font-weight: 900;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-wrap: nowrap;
+}
+.submit {
+  padding: 8px 20px;
+  cursor: pointer;
+  border-radius: 20px;
+  font-size: large;
+  font-weight: 900;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border: 0px;
+}
+.submit:hover {
+  background-color: aquamarine;
+}
+
+.wrap_submit {
+  display: flex;
+  justify-content: center;
+}
+
+.hideTable {
+  display: none;
+}
+
+.table_row:hover {
+  background: rgb(200, 199, 199);
+  border-radius: 10px;
+  border: 0;
+  font-weight: 500;
+  cursor: pointer;
+}
+.user_list {
+  padding: 5px 10px;
+  font-size: large;
+  text-transform: capitalize;
+}
+.user_link:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  font-size: 17px;
+  color: firebrick;
+}
+
+.studentModel {
+  width: 100%;
+}
+.model-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+.close-model {
+  padding: 5px;
+  border: 0;
+  background-color: hsl(0, 100%, 70%);
+  color: aliceblue;
+  border-radius: 20%;
+  cursor: pointer;
+}
+.close-model:hover {
+  transform: scale(1.1);
+  transition: all;
+  transition-timing-function: ease-in-out;
+}
+
+.reportIntro {
+  font-size: 18px;
+}
+.reportIntro > span {
+  font-size: 22px;
+  text-transform: capitalize;
+}
+.studentIntro {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.studentIntro > p {
+  text-transform: capitalize;
+}
+
+.addGrade {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 20px 10px;
+}
+.addGrade > button {
+  padding: 5px 10px;
+  border: 0;
+  cursor: pointer;
+  font-weight: 700;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  border-radius: 6px;
+  background-color: rgb(144, 176, 235);
+}
+.addGrade > button:hover {
+  background-color: antiquewhite;
+}
+.gradeForm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+  gap: 30px;
+}
+.inputWarper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.inputWarper > select {
+  padding: 5px 0;
+  flex-grow: 1;
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  flex-grow: 1;
+  gap: 12px;
+}
+.inputPoint {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.inputPoint > input {
+  width: 100px;
+  padding: 4px;
+  outline: none;
+  border: 1px rgb(175, 170, 170) solid;
+  border-radius: 5px;
+}
+.first_select {
+  display: flex;
+  flex-grow: 1;
+}
+.first_select > select {
+  flex-grow: 1;
+  padding: 3px;
+  cursor: pointer;
+  outline: none;
+  border: 1px rgb(175, 170, 170) solid;
+  border-radius: 5px;
+}
+option {
+  cursor: pointer !important;
+}
+#noGradeTitle {
+  display: none;
+  font-size: 16px;
+  text-align: center;
+  text-transform: capitalize;
+  color: rgb(117, 63, 63);
+}
+#deleteStd {
+  background-color: rgb(211, 173, 173);
+  color: rgb(77, 7, 7);
+  padding: 5px 15px;
+  border-radius: 30px;
+  border: 1px rgb(210, 138, 138) solid;
+  cursor: pointer;
+  text-wrap: nowrap;
+  box-shadow: 5px 5px 15px rgb(95, 93, 93);
+}
+
+.secondary{
+  background-color: rgb(180, 178, 178);
+  color: rgb(77, 7, 7);
+  padding: 5px 15px;
+  border-radius: 30px;
+  border: 1px rgb(196, 191, 191) solid;
+  cursor: pointer;
+  /* box-shadow: 5px 5px 100px rgb(95, 93, 93); */
+  text-wrap: nowrap;
+}

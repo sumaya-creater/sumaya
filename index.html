@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon" />
+    <title>Attendence app</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="/images/logo.png" alt="logo" />
+      </div>
+
+      <ul class="listItems">
+        <li class="nav_items">
+          <a href="/">Home</a>
+        </li>
+        <li class="nav_items">
+          <a href="/create/create _list.html">Create list</a>
+        </li>
+        <li class="nav_items">
+          <a href="/abscent.html">Abscent</a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="container">
+      <div class="searchBox" id="search-Box">
+        <input type="text" />
+        <button class="searchBtn">search</button>
+      </div>
+
+      <table border="1px black solid" style="width: 100%" id="table_list">
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Location</th>
+          <th>Age</th>
+        </tr>
+      </table>
+      <div class="studentModel" id="studentModel">
+        <div class="model-title">
+          <h1 class="title" id="modelTitle">Student report</h1>
+          <button class="close-model" id="closeModel">X</button>
+        </div>
+        <div style="display: flex; justify-content: space-between; align-self: center;">
+          <div class="studentIntro" id="studentIntro"></div>
+          <div style="display: flex; align-items: end; gap: 12px;">
+            <button id="editStudent" class="secondary">Edit student</button>
+            <button id="deleteStd">Delete student</button>
+          </div>
+        </div>
+
+        <div class="addGrade">
+          <button id="addGrade">Add grade</button>
+        </div>
+        <table border="1px black solid" style="width: 100%" id="gradeTable">
+          <tr>
+            <th>Subject</th>
+            <th>Point</th>
+            <th>Max point</th>
+            <th>Type</th>
+          </tr>
+        </table>
+        <p id="noGradeTitle">no grade found!!..</p>
+      </div>
+      
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>

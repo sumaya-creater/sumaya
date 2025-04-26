@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>add grade page</title>
+  </head>
+  <body>
+    <nav class="navbar">
+        <div class="logo">
+          <img src="/images/logo.png" alt="logo" />
+        </div>
+  
+        <ul class="listItems">
+          <li class="nav_items">
+            <a href="/">Home</a>
+          </li>
+          <li class="nav_items">
+            <a href="/create/create _list.html">Create list</a>
+          </li>
+          <li class="nav_items">
+            <a href="/abscent.html">Abscent</a>
+          </li>
+        </ul>
+      </nav>
+    <section class="container">
+      <h1 class="title" id="gradeTitle" style="margin-bottom: 20px;"></h1>
+
+      <form class="gradeForm" id="submitGrade">
+        <div class="inputWarper">
+          <div class="first_select">
+            <label for="">Subject</label>
+            <select name="" id="selectSubject">
+              <option></option>
+              <option value="math">Math</option>
+              <option value="english">English</option>
+              <option value="c++">C++</option>
+            </select>
+          </div>
+          <div class="first_select">
+            <label for="">Type</label>
+            <select name="" id="selectType">
+              <option></option>
+              <option value="exam">Exam</option>
+              <option value="quiz">Quiz</option>
+            </select>
+          </div>
+        </div>
+        <div class="wrapper">
+          <div class="inputPoint">
+            <label for="">Point</label>
+            <input type="number" id="pointInput"/>
+          </div>
+          <div class="inputPoint">
+            <label for="">Max point</label>
+            <input type="number" id="maxPointInput" />
+          </div>
+        </div>
+        <div style="text-align: center; margin-top: 20px">
+          <button type="submit" class="searchBtn">Add grade</button>
+        </div>
+      </form>
+    </section>
+    <script src="grade.js"></script>
+  </body>
+</html>
