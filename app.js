@@ -20,7 +20,7 @@ let userName = "";
 let userLocation = "";
 let userAge = "";
 let clickedStudentId;
-
+const API_URL =`https://sumaya.onrender.com`
 if (userNameInput && locationInput && ageInput) {
   userNameInput.addEventListener("keyup", (event) => {
     userName = event.target.value;
@@ -54,7 +54,7 @@ function saveUserData() {
     return console.log("you must provide all field");
   }
 
-  fetch("http://localhost:3000/api/save", {
+  fetch(`${API_URL}/api/save`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -68,7 +68,7 @@ function saveUserData() {
 getAllData();
 
 function getAllData() {
-  fetch("http://localhost:3000/", {
+  fetch(`${API_URL}/api/attendance`, {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
@@ -110,7 +110,7 @@ function getAllData() {
 }
 
 const studentData = () => {
-  fetch(`http://localhost:3000/student/${clickedStudentId}`, {
+  fetch(`${API_URL}/student/${clickedStudentId}`, {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
@@ -143,7 +143,7 @@ const studentData = () => {
 };
 
 const getshowGrade = ()=> {
-  fetch(`http://localhost:3000/grade/${clickedStudentId}`, {
+  fetch(`${API_URL}/grade/${clickedStudentId}`, {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
@@ -163,7 +163,7 @@ const getshowGrade = ()=> {
 }
 
 function deleteIndividualStudent(clickedStudentId) {
-  fetch(`http://localhost:3000/api/delete/${clickedStudentId}`,{
+  fetch(`${API_URL}/api/delete/${clickedStudentId}`,{
     method:'DELETE',
     headers: {
       "Content-Type": "application/json",
