@@ -2,6 +2,7 @@ const express = require("express");
 const Sqlite = require("sqlite3");
 const cors =require("cors")
 const path = require("path")
+const app =express();
 const port = process.env.PORT || 10000;
 app.use(express.json());
 app.use(express.static(__dirname))
